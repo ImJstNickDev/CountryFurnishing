@@ -16,6 +16,7 @@ p {
 }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -37,6 +38,13 @@ p {
 		$_SESSION['password'] = md5($_POST['password']);
 		$_SESSION['sid'] = session_id();
 		$_SESSION['userlevel'] = $row['userlevel'];
+		if($row['userlevel'] == 0)
+		{
+			$userdashboard = "dashboard";
+		} else if($row['userlevel'] == 10)
+		{
+			$userdashboard = "admin_dashboard";
+		}
 		echo '
 		<div><h3>LOGIN EFFETTUATO, REDIRECT IN <span id="time">5</span> SECONDI...</h3></div>
 		<script>
@@ -49,7 +57,7 @@ p {
 		
 					if (--timer < 0) {
 						timer = duration-1;
-						window.location = "admin_dashboard.php";
+						window.location = "'.$userdashboard.'.php";
 						display.textContent = duration;
 					}
 				}, 1000);
@@ -57,7 +65,7 @@ p {
 		
 			window.onload = function () {
 				var display = document.querySelector("#time");
-				startTimer(5, display);
+				startTimer(2, display);
 			};
 		</script>
 		';
