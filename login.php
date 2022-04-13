@@ -16,7 +16,7 @@ p {
 }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -46,7 +46,7 @@ p {
 			$userdashboard = "admin_dashboard";
 		}
 		echo '
-		<div><h3>LOGIN EFFETTUATO, REDIRECT IN <span id="time">5</span> SECONDI...</h3></div>
+		<div><h1><center>LOGIN EFFETTUATO, REDIRECT IN <span id="time">5</span> SECONDI...</center></h1></div>
 		<script>
 			function startTimer(duration, display) {
 				var timer = duration;
