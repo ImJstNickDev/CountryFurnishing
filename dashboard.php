@@ -23,8 +23,8 @@
 			</label>
 			<ul>
 				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#">Project</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="ordina.php">Ordina</a></li>
+				<li><a href="#">Contattaci</a></li>
 				<li><a href="logout.php">Logout</a></li>
 			</ul>
 		</nav>
@@ -40,7 +40,7 @@
 				</center>
 			</div>
 		</div>
-		<div class="dashboard">
+		<div class="flexdashboard">
 			<div class="element">
 				<button class="raise" onclick="window.location.href='.$orderlink.'">ORDINA</button>
 			</div>
