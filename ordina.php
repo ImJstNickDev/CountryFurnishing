@@ -59,3 +59,30 @@
 		</div>
 	</div>
 </body>
+
+<?php
+
+	$carrello = [];
+	$carrello[1]['prodotto'] = "Supplì alla 'nduja";
+	$carrello[1]['quantity'] = 1;
+	$carrello[1]['prezzo'] = "5,00";
+
+	$carrello[2]['prodotto'] = "Mozzarelline fritte";
+	$carrello[2]['quantity'] = 4;
+	$carrello[2]['prezzo'] = "3,00";
+
+	$carrello[3]['prodotto'] = "Pizza Margherita";
+	$carrello[3]['quantity'] = 1;
+	$carrello[3]['prezzo'] = "7,00";
+
+	$carrello[4]['prodotto'] = "Pizza Prosciutto";
+	$carrello[4]['quantity'] = 1;
+	$carrello[4]['prezzo'] = "7,00";
+
+	$carrello[5]['prodotto'] = "Pizza Funghi";
+	$carrello[5]['quantity'] = 1;
+	$carrello[5]['prezzo'] = "7,00";
+
+	HEADER("Refresh: 5; url=ordina_tipo_suppli.php"); 
+
+?>
