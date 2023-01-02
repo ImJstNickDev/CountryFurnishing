@@ -25,7 +25,7 @@
 				<li><a href="#" class="active">Home</a></li>
 				<li><a href="ordina.php">Ordina</a></li>
 				<li><a href="#">Contattaci</a></li>
-				<li><a href="logout.php">Logout</a></li>
+				<li><a href="../logout.php">Logout</a></li>
 			</ul>
 		</nav>
 		<br>

@@ -40,10 +40,10 @@ p {
 		$_SESSION['userlevel'] = $row['userlevel'];
 		if($row['userlevel'] == 0)
 		{
-			$userdashboard = "dashboard";
-		} else if($row['userlevel'] == 10)
+			$userdashboard = "user/dashboard";
+		} else if($row['userlevel'] == 99)
 		{
-			$userdashboard = "admin_dashboard";
+			$userdashboard = "admin/admin_dashboard";
 		}
 		echo '
 		<div><h1><center>LOGIN EFFETTUATO, REDIRECT IN <span id="time">5</span> SECONDI...</center></h1></div>
@@ -65,7 +65,7 @@ p {
 		
 			window.onload = function () {
 				var display = document.querySelector("#time");
-				startTimer(2, display);
+				startTimer(5, display);
 			};
 		</script>
 		';
