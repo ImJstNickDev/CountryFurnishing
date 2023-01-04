@@ -71,7 +71,21 @@ p {
 		';
 	} else
 	{
-		echo 'Utente non presente';
+		echo
+		'
+			<div class="login">
+				<div class="form">
+					<form action="login.php" method="POST" class="login-form" >
+						<span class="material-icons">ERROR</span>
+						<br>
+						<br>
+						<br>
+						<p style="font-size:x-large;">Nome utente o password non corretti</p>
+						<a href=".">Riprovare</a>
+					</form>
+				</div>
+			</div>
+		';
 	}
 	$result->free();
 	$conn->close();

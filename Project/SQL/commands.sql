@@ -6,20 +6,25 @@ USE countryfurnishings;
 -- USER TABLE CREATION
 CREATE TABLE Utenti(
     uid INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(30) NOT NULL,
+    cognome VARCHAR(30) NOT NULL,
     username VARCHAR(30) NOT NULL,
     passphrase VARCHAR(32) NOT NULL,
     email VARCHAR(128) NOT NULL,
-    ragionesociale VARCHAR(40) NOT NULL,
-    userlevel INT NOT NULL DEFAULT '0'
+    ragionesociale VARCHAR(40) default "n/d",
+    piva VARCHAR(30) default "n/d",
+    codfis VARCHAR(18) NOT NULL,
+    userlevel INT NOT NULL DEFAULT 0,
+    statoattivazione INT NOT NULL DEFAULT -1
 ); 
 
 
 -- "098f6bcd4621d373cade4e832627b4f6" = "test"
-INSERT INTO utenti(username, passphrase, email, ragionesociale)
-	VALUES("test", "098f6bcd4621d373cade4e832627b4f6", "testmail", "SOCIATO");
+INSERT INTO utenti(nome, cognome, username, passphrase, email, ragionesociale, piva, codfis, statoattivazione)
+	VALUES("testo", "testato", "test", "098f6bcd4621d373cade4e832627b4f6", "testmail@mail.com", "SOCIATO", "IT349286492", "MRJCKE02O03H482C", 1);
 
-INSERT INTO utenti(username, passphrase, email, ragionesociale,userlevel)
-    VALUES("admin", "098f6bcd4621d373cade4e832627b4f6", "testadmin", "admin", 99);
+INSERT INTO utenti(nome, cognome, username, passphrase, email, ragionesociale, piva, codfis, userlevel, statoattivazione)
+    VALUES("admino", "peppino", "admin", "098f6bcd4621d373cade4e832627b4f6", "admin@mail.com", "admin", "IT349286491", "ADMPPI01P02H501C", 99, 1);
 
 
 

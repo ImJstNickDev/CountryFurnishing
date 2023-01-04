@@ -1,7 +1,9 @@
 ☐ Aggiungere Captcha basato su RAND per la conferma dell'eliminazione di qualsiasi cosa all'interno del database
-☐ Aggiungere Destructive mode -Bypass Captcha- quando si eliminano le categorie o i prodotti
-☐ Creare delle impostazioni per aumentare o diminuire il livello di aggressività del Captcha
+    ☐ Aggiungere Destructive mode -Bypass Captcha- quando si eliminano le categorie o i prodotti
+    ☐ Creare delle impostazioni per aumentare o diminuire il livello di aggressività del Captcha
 ☐ Aggiungere controllo sessioni su ogni pagina per evitare lo user intrusion
-☐ Aggiungere Script di registrazione al sito
+✔ Aggiungere Script di registrazione al sito @started(23-01-03 15:49) @done(23-01-03 16:54) @lasted(1h5m28s)
+    ☐ Sviluppare l'invio della mail
+    ☐ Sviluppare la creazione di un link di conferma da dover cliccare entro tot tempo
 ☐ Aggiungere il sistema di gestione utenti
-☐ Sistemare lo stile dell'utente non presente quando il login è incorretto
+✔ Sistemare lo stile dell'utente non presente quando il login è incorretto @started(23-01-03 16:56) @done(23-01-03 17:00) @lasted(4m55s)
